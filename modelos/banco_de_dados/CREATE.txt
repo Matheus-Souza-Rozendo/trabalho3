@@ -1,6 +1,6 @@
 CREATE TABLE treinamentos (
-    id_treinamento INT AUTO_INCREMENT PRIMARY KEY,
-    nome_treinamento VARCHAR(255) NOT NULL,
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
     duracao INT NOT NULL,
     instrutor VARCHAR(255) NOT NULL,
     data_inicio DATE NOT NULL,

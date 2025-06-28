@@ -13,7 +13,7 @@
 - **local**: Local do treinamento.
 
 ### Métodos:
-- **privado**: `validar_dados()`: Verificar a consistência dos dados na hora da criação da classe.
+- `validar_dados()`: Verificar a consistência dos dados na instancia da classe.
 
 ---
 

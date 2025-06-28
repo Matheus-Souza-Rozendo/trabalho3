@@ -1,4 +1,4 @@
-/trabalho
+/TRABALHO3
 │
 ├── /app
 │   ├── __init__.py         # Inicialização do app Flask
