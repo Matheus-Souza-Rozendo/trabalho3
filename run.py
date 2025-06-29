@@ -102,4 +102,4 @@ def buscar_por_id(id: int):
 
 # Execução do app
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
