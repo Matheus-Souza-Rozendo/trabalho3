@@ -1,6 +1,6 @@
-ssh trabalho3.matheus.sr.vms.ufsc.br
+ssh matheus.sr@trabalho.matheus.sr.vms.ufsc.br
 
-R2izGKqW6d
+dG3m6XTo2g
 
 //instalar docker
 sudo apt-get update
@@ -24,13 +24,14 @@ sudo systemctl start docker
 docker --version
 
 // criar container mysql
-docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mysql:latest
+sudo docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mysql:latest
 
 //interagir com o container
-docker exec -it mysql-container bash
+sudo docker exec -it mysql-container mysql -uroot -p
 
 // criar banco de dados
 CREATE DATABASE Treinamentos
+USE Treinamentos
 
 CREATE TABLE treinamentos (
     id INT AUTO_INCREMENT PRIMARY KEY,
