@@ -1,5 +1,5 @@
 import mysql.connector
-from app.Treinamento import Treinamento 
+from Aplicacao.Treinamento import Treinamento 
 
 class TreinamentoRepository:
     

@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify
-from app.Treinamento import Treinamento
-from app.TreinamentoRepository import TreinamentoRepository
+from Aplicacao.Treinamento import Treinamento
+from Aplicacao.TreinamentoRepository import TreinamentoRepository
 
 # Criação do app Flask
 app = Flask(__name__)
