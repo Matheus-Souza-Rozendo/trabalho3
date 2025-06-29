@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve TRABALHO3
+After=network.target
+
+[Service]
+User=matheus.sr
+Group=www-data
+WorkingDirectory=/home/matheus.sr/TRABALHO3
+Environment="PATH=/home/matheus.sr/TRABALHO3/venv/bin"
+ExecStart=/home/matheus.sr/TRABALHO3/venv/bin/gunicorn --workers 3 --bind unix:app.sock -m 007 app:app
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+server {
+    listen 443 ssl;
+    listen 80;
+    server_name trabalho3.matheus.sr.vms.ufsc.br;
+
+location / {
+  include proxy_params;
+  proxy_pass http://unix:/home/matheus.sr/TRABALHO3/app.sock;
+    }
+}
